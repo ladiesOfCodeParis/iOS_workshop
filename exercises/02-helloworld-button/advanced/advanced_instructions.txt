@@ -1,0 +1,33 @@
+ADVANCED for those who finished early:
+
+Edit some properties of the button to change color, font, text, etc. 
+Add another button or another component, such as a label or a view.
+
+INSTRUCTIONS:
+- Editing the UI of a button
+Go to Main.storyboard
+Select the button
+Explore the right panel.
+How do you change font, text color, background color of a button ?
+
+- Fast construction of other controls
+Drag & Drop other UI controls : a view, a label, an image, a slider, etc… 
+Open the « Assistant Editor » ( Xcode > Navigate > Open in Assistant Editor )
+Bring : Main.storyboard on left pane, ViewController.m on right pane.
+From the storyboard, right-tap on a button.
+Drag and drop the « touch-up-inside » (+) sign to the right pane, just before the @end marker of the ViewController.m code file.
+This will create a action method that you can edit.
+
+- Swift
+Re-create same project using Swift and compare code differences.
+
+
+CODE SNIPPET in Swift 
+
+    @IBAction func showAlert() {
+        let alert = UIAlertController(title: "Alert", message: "Hello Simplon", preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        self.presentViewController(alert, animated: true, completion: nil)
+    }
+
+

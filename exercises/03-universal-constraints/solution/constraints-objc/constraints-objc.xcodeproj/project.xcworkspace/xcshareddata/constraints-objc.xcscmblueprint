@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54339D48CA31C628987BB40297138645564C90FD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "BA479E57-DB9A-48CD-B8B7-1E123D399658",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "constraints-objc",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "exercises\/03-universal-constraints\/solution\/constraints-objc\/constraints-objc.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ladiesWhoCodeParis\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD"
+    }
+  ]
+}
