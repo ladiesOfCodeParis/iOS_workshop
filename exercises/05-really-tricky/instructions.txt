@@ -1,0 +1,35 @@
+GOALS: 
+- Create a meal tracking app
+- The purpose of the app is to let you add a list of things you’ve eaten day by day. 
+- The app should have a database of meals references.
+- On main screen, you should have a list of dates.=
+- If you tap on one date, you can see a list of meals, empty or not.
+- If you tap on ‘edit’ you can delete an item or add an item at the bottom.
+- Once done, you can tap on ‘Done’
+- A back button should bring you back to the main screen.
+
+START :
+Open the Xcode project file under ./really-tricky-exercice/really-tricky-exercice.xcodeproj
+
+INSTRUCTIONS / Hints :
+- Create a meal tracking app
+- On main screen, you should have a list of dates
+Use UITableView for dates
+Enclose it in a NavigationViewController
+- If you tap on one date, you can see a list of meals, empty or not.
+NavigationViewController should push a custom view controller for editing.
+Use UITableView for meals
+- If you tap on ‘edit’ you can delete an item or add an item at the bottom.
+Enter edit mode on UITableView
+- Once done, you can tap on ‘Done’
+Save data somewhere.
+- A back button should bring you back to the main screen.
+NavigationViewController navigation
+
+SOLUTION:
+You should find the Xcode project under the ./solution folder.
+If run, the app should display a button centered in all configurations. 
+
+
+THINGS TO LOOK UP OR ASK :
+- Don’t hesitate to ask questions… ! 

@@ -2,6 +2,7 @@ GOALS:
 - Start to use Xcode Interface Builder WYSIWYG tool.
 - Add a button on the app
 - Add some logic behind
+- Get a understanding of the MVC pattern
 
 START :
 Open the Xcode project file under ./helloworld-exercice/helloworld-exercice.xcodeproj
@@ -48,3 +49,10 @@ What is the AppDelegate ?
 What is the storyboard ?
 What is the IBAction keyword ?
 Can/Why/When do we edit the default boiler place code in the basic classes on the project ?
+
+What is the MVC pattern ?
+View = the view and the button in the view
+Controller = the viewcontroller which tells that is the button is clicked we display a message.
+Model = no real model here, no data, just a single message when button is clicked.
+
+

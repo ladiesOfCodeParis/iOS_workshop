@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54339D48CA31C628987BB40297138645564C90FD+++30E2718",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++30E2718" : 0,
+    "54339D48CA31C628987BB40297138645564C90FD+++3B31FB4" : 0,
+    "54339D48CA31C628987BB40297138645564C90FD+++C324758" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "103FCE63-7164-436D-A071-8B3865A4A269",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++30E2718" : "iOS_workshop\/",
+    "54339D48CA31C628987BB40297138645564C90FD+++3B31FB4" : "",
+    "54339D48CA31C628987BB40297138645564C90FD+++C324758" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "design-pattern-exercice",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "exercises\/04-design-patterns\/design-pattern-exercice\/design-pattern-exercice\/design-pattern-exercice.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++30E2718"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++3B31FB4"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ladiesWhoCodeParis\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++C324758"
+    }
+  ]
+}
