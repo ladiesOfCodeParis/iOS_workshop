@@ -1,0 +1,30 @@
+ADVANCED for those who finished early:
+
+Explore the basic Project file structure
+Use some shortcuts.
+How to navigate between areas of the IDE ?
+How to trigger code navigation from a method to its definition ?
+
+INSTRUCTIONS:
+- IDE discovery :
+Cmd Shift O
+Cmd B
+Cmd J
+ESC
+Cmd click
+Alt click
+Cmd + Shift + /
+Ctrl + 6
+
+From the above shortcuts :
+How do you trigger auto-completion ?
+How do you display documentation on the SDK ?
+How do you quick-search&launch a command ?
+Did you understand all the shortcuts ?
+
+- Simulator discovery :
+Change your simulator model and re-run.
+Cmd Shift H
+
+- Swift :
+Re-create same project using Swift and compare code differences.

@@ -1,0 +1,24 @@
+GOALS: 
+- Check prerequisites (Xcode, Simulator, etc)
+- Explore the Xcode IDE
+- Start a simple app
+
+START:
+Launch Xcode.
+
+INSTRUCTIONS:
+Create a new Project : Xcode > File > New > Project…
+Select iOS > Application > Single View Application, then Next.
+Enter project name : empty-single-view
+Select Language: Objective-C, then Next.
+Choose a location, then Create
+Explore the Xcode interface : file explorer, editor view, inspector view.
+Launch the app and use the Simulator : rotate, pinch, etc. 
+When done, stop the debug run. 
+
+SOLUTION:
+You should find a simple single-view based Xcode project under the ./solution folder.
+
+THINGS TO LOOK UP OR ASK :
+What is a ViewController ?
+What is the AppDelegate ?

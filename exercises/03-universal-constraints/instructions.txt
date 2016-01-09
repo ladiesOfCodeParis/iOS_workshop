@@ -1,0 +1,43 @@
+GOALS: 
+- Improve your UI 
+- Prepare for multiple screen sizes by using UI constraints.
+
+START :
+Open the Xcode project file under ./constraints-exercice/constraints-exercice.xcodeproj
+
+INSTRUCTIONS:
+Open Main.storyboard
+Tap on the button in the hierarchy of the scene.
+Change button background color to blue.
+Change button font color to white.
+Maintain Ctrl button pressed down
+Drap from the Button item to the above View.
+Release and select « Center horizontally in Container »
+(repeat)
+Tap on the button in the hierarchy of the scene.
+Maintain Ctrl button pressed down
+Drap from the Button item to the above View.
+Release and select « Center vertically in Container »
+Resolve conflicts. (yellow arrow, yellow warning, update frame, fix replacement)
+Tap on the button in the hierarchy of the scene.
+Maintain Ctrl button pressed down
+Drap from the Button item to itself.
+Release and select « Width »
+(repeat)
+Tap on the button in the hierarchy of the scene.
+Maintain Ctrl button pressed down
+Drap from the Button item to itself.
+Release and select « Height »
+On the right panel, edit width constraint and set constant to 100.
+On the right panel, edit height constraint and set constant to 100.
+Run the app.
+Test several device types and rotations : check that the button is always correctly centered.
+
+SOLUTION:
+You should find the Xcode project under the ./solution folder.
+If run, the app should display a button centered in all configurations. 
+
+
+THINGS TO LOOK UP OR ASK :
+Explore the right panel when looking at the button. 
+Can we edit more details of the constraints ?

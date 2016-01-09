@@ -1,0 +1,11 @@
+If using a FR keyboard on a macbook:
+
+| : alt + shift + L
+\ : alt + shift + /
+{ : alt + (
+[ : alt + shift + (
+_ : shift + - 
+* : shift + $
+
+When looking for a combination, activating this can help:
+Préférences Système > Clavier > and check « Afficher les visualisateurs de ce clavier » 

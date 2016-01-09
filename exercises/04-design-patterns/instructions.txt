@@ -1,0 +1,110 @@
+GOALS: 
+- Continue with the MVC pattern
+- View hierarchy
+- Implement delegate pattern to push a new view and close it back.
+
+START :
+Open the Xcode project file under ./design-pattern-exercice/design-pattern-exercice.xcodeproj
+
+INSTRUCTIONS:
+1- MainViewController : on the buttonTapped event, display the NameViewController
+Use the code snippet to present the NameViewController modally.
+
+2- NameViewControllerDelegate : create a delegate protocol
+Define a delegate protocol : use the code snippet and place it on the header of the objective-c file NameViewController. The protocol should declare two functions cancel and ok. 
+
+3- NameViewController : on the OK and Cancel events, delegate the actions back to the MainViewController
+Add a property member of the protocol type NameViewControllerDelegate.
+On the events, call the delegate’s functions
+Back on MainViewController, when the NameViewController is instantiated, set the MainViewController in the delegate property.
+
+4- MainViewController : delegate implementation should display the collected info if user has pushed OK, and should make the NameViewController disappear.
+On MainViewController, declare the class as implementing the delegate protocol.
+Implement the ok and cancel delegate functions.
+
+SOLUTION:
+You should find the Xcode project under the ./solution folder.
+If run, the app should display a button centered in all configurations. 
+
+
+
+
+SNIPPETS
+1- present NameViewController modally
+
+    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    NameViewController *vc = (NameViewController*)[sb instantiateViewControllerWithIdentifier:@"nameVC"];
+    vc.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
+    vc.modalPresentationStyle = UIModalPresentationFormSheet;
+    [self presentViewController:vc animated:YES completion:nil];
+
+2- NameViewControllerDelegate declaration
+
+@protocol NameViewControllerDelegate <NSObject>
+-(void)okPressed:(id)sender withFirstName:(NSString*)firstName lastName:(NSString*)lastName;
+-(void)cancelPressed:(id)sender;
+@end
+
+3- use delegate to implement information passing from NameViewController to MainViewController 
+
+// delegate as a property member in NameViewController.h
+@property id<NameViewControllerDelegate> delegate;
+
+// events in implementation in NameViewController.m
+- (IBAction)didPressCancel:(id)sender {
+    [self.delegate cancelPressed:self];
+}
+
+- (IBAction)didPressOK:(id)sender {
+    [self.delegate okPressed:self withFirstName:self.firstNameText.text lastName:self.lastNameText.text];
+}
+
+4- MainViewController 
+
+// protocol conforming
+@interface MainViewController () <NameViewControllerDelegate>
+
+// delegate function implementation
+- (void)okPressed:(id)sender withFirstName:(NSString *)firstName lastName:(NSString *)lastName {
+    self.firstNameLabel.text = firstName;
+    self.lastNameLabel.text = lastName;
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)cancelPressed:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+// modify code when NameViewController is instantiated into:
+    NameViewController *vc = (NameViewController*)[sb instantiateViewControllerWithIdentifier:@"nameVC"];
+    vc.delegate = self;
+
+
+
+THINGS TO LOOK UP OR ASK :
+- Don’t hesitate to ask questions… ! 
+
+- Lots of back and forth from the NameViewController and the MainViewController. 
+
+MainViewController - - - >            displays           - - - > NameViewController
+MainViewController - - - > sets himself as a delegate in - - - > NameViewController
+
+                                                                       |
+                                                                       |
+                                                                       |
+
+                                                          informs that he got clicked 
+                                                               passes data to 
+
+                                                                       |
+                                                                       |
+                                                                       |
+MainViewController  <------------------------------------------------- V
+        |
+        |
+receives info through delegate calls
+ updates its own data
+        |
+        V
+	 - - - - - - - - - - >         dismisses          - - - > NameViewController
+

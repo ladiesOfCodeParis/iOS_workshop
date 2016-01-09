@@ -1,0 +1,58 @@
+GOALS: 
+- Start to use Xcode Interface Builder WYSIWYG tool.
+- Add a button on the app
+- Add some logic behind
+- Get a understanding of the MVC pattern
+
+START :
+Open the Xcode project file under ./helloworld-exercice/helloworld-exercice.xcodeproj
+
+INSTRUCTIONS:
+Open the Main.storyboard file
+Place yourself on the ‘View’ element under the ViewController display
+Drag-&-drop a button from the right pane to this View.
+Open ViewController.m
+Add a small code snippet (*) just before the @end marker.
+Open the Main.storyboard file again.
+Right-tap (two-finger tap) on the item « View Controller »
+On the popuped-up menu, hover on « Received Action > showAlert > o » 
+a (+) sign should appear on the right end row.
+Drag this (+) from the menu to the button area.
+On release of the click, select « touch up inside »
+Run the app. 
+Test your new button.
+When done, stop the debug. 
+
+SOLUTION:
+You should find the Xcode project under the ./solution folder.
+If run, the app should display a button. When tapped, the button should display a simple alert.
+
+
+CODE SNIPPET :
+
+- (IBAction)showAlert:(id)sender {
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"My Alert"
+                                                                   message:@"Hello Simplon"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+    
+}
+
+THINGS TO LOOK UP OR ASK :
+What is a ViewController ?
+What is the AppDelegate ?
+What is the storyboard ?
+What is the IBAction keyword ?
+Can/Why/When do we edit the default boiler place code in the basic classes on the project ?
+
+What is the MVC pattern ?
+View = the view and the button in the view
+Controller = the viewcontroller which tells that is the button is clicked we display a message.
+Model = no real model here, no data, just a single message when button is clicked.
+
+
