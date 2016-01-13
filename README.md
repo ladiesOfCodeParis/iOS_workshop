@@ -11,11 +11,12 @@ Goals are :
 
 ### Exercices
 Exercices are of progressive difficulty. 
-1. Exercice 01 : Check prerequisites, start a simple empty app, exploire the Xcode IDE and Simulator. 
-2. Exercice 02 : Add a button, hook a alert popup, introduction to MVC pattern.
-3. Exercice 03 : Improve UI easily using NSConstraints
-4. Exercice 04 : Continue on MVC pattern, understand the view hierarchy, implement a delegate pattern to push a view and close it back.
-5. Exercice 05 : (if time) Create a meal tracking app. Use important iOS component such as UINavigationController and UITableViewController.
+
+1 Exercice 01 : Check prerequisites, start a simple empty app, exploire the Xcode IDE and Simulator. 
+2 Exercice 02 : Add a button, hook a alert popup, introduction to MVC pattern.
+3 Exercice 03 : Improve UI easily using NSConstraints
+4 Exercice 04 : Continue on MVC pattern, understand the view hierarchy, implement a delegate pattern to push a view and close it back.
+5 Exercice 05 : (if time) Create a meal tracking app. Use important iOS component such as UINavigationController and UITableViewController.
 
 ### Architecture of the folders 
 ```
@@ -45,15 +46,15 @@ Exercices are of progressive difficulty.
 │   │   └─ /(file).m4v  			# video screenshot for more explanation
 │   │
 │   ├── /04-design-patterns/    # exercice 4
-│   │   ├─ /instructions.txt    	# step by step instructions on doing the exercice
+│   │   ├─ /instructions.txt        # step by step instructions on doing the exercice
 │   │   ├─ /(name)-exercice/        # xcode projet of the starting point
 │   │   └─ /solution/  				# xcode projet of the end result
 │   │
 │   └── /05-really-tricky/      # exercice 5
-│       ├─ /instructions.txt    	# step by step instructions on doing the exercice
+│       ├─ /instructions.txt        # step by step instructions on doing the exercice
 │       ├─ /(name)-exercice/        # xcode projet of the starting point
-│       ├─ /(file).m4v  			# video screenshot for more explanation
-│       └─ /solution/  				# xcode projet of the end result
+│       ├─ /(file).m4v              # video screenshot for more explanation
+│       └─ /solution/               # xcode projet of the end result
 │
 ```
 
