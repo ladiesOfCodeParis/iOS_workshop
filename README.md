@@ -61,7 +61,7 @@ Exercises are of progressive difficulty.
 ### Pre-requisites
 - Mac OS X 10.11 El Capitan
 - XCode 7.2 with iOS 9.2 Documentation
-
+- Github repo content [LadiesWhoCodeParis iOS Workshop](https://github.com/ladiesWhoCodeParis/iOS_workshop)
 
 ### Slides
 Under ./prez_web_au_mobile, there are some presentation slides on "differences between web development and native mobile development".
