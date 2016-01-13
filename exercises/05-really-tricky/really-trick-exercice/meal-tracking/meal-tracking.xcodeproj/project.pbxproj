@@ -1,0 +1,356 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		270DAE131C44712A00BD8CD8 /* DayRecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DAE121C44712A00BD8CD8 /* DayRecordViewController.m */; };
+		270DAE161C4477C500BD8CD8 /* MealInventoryTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 270DAE151C4477C500BD8CD8 /* MealInventoryTableViewController.m */; };
+		2756965D1C446BB600023072 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2756965C1C446BB600023072 /* main.m */; };
+		275696601C446BB600023072 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2756965F1C446BB600023072 /* AppDelegate.m */; };
+		275696631C446BB600023072 /* DiaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 275696621C446BB600023072 /* DiaryViewController.m */; };
+		275696661C446BB600023072 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275696641C446BB600023072 /* Main.storyboard */; };
+		275696681C446BB600023072 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 275696671C446BB600023072 /* Assets.xcassets */; };
+		2756966B1C446BB600023072 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 275696691C446BB600023072 /* LaunchScreen.storyboard */; };
+		2793D1531C45BDDF009F7E22 /* MealDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2793D1521C45BDDF009F7E22 /* MealDatabase.m */; };
+		2793D1561C45BEAF009F7E22 /* UserMealRecordDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2793D1551C45BEAF009F7E22 /* UserMealRecordDatabase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		270DAE111C44712A00BD8CD8 /* DayRecordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayRecordViewController.h; sourceTree = "<group>"; };
+		270DAE121C44712A00BD8CD8 /* DayRecordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayRecordViewController.m; sourceTree = "<group>"; };
+		270DAE141C4477C500BD8CD8 /* MealInventoryTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealInventoryTableViewController.h; sourceTree = "<group>"; };
+		270DAE151C4477C500BD8CD8 /* MealInventoryTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealInventoryTableViewController.m; sourceTree = "<group>"; };
+		275696581C446BB600023072 /* meal-tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "meal-tracking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2756965C1C446BB600023072 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2756965E1C446BB600023072 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2756965F1C446BB600023072 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		275696611C446BB600023072 /* DiaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiaryViewController.h; sourceTree = "<group>"; };
+		275696621C446BB600023072 /* DiaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiaryViewController.m; sourceTree = "<group>"; };
+		275696651C446BB600023072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		275696671C446BB600023072 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2756966A1C446BB600023072 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2756966C1C446BB600023072 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2793D1511C45BDDF009F7E22 /* MealDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MealDatabase.h; sourceTree = "<group>"; };
+		2793D1521C45BDDF009F7E22 /* MealDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MealDatabase.m; sourceTree = "<group>"; };
+		2793D1541C45BEAF009F7E22 /* UserMealRecordDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserMealRecordDatabase.h; sourceTree = "<group>"; };
+		2793D1551C45BEAF009F7E22 /* UserMealRecordDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserMealRecordDatabase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		275696551C446BB600023072 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2756964F1C446BB600023072 = {
+			isa = PBXGroup;
+			children = (
+				2756965A1C446BB600023072 /* meal-tracking */,
+				275696591C446BB600023072 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		275696591C446BB600023072 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				275696581C446BB600023072 /* meal-tracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2756965A1C446BB600023072 /* meal-tracking */ = {
+			isa = PBXGroup;
+			children = (
+				2793D1591C45C582009F7E22 /* Views */,
+				2793D1581C45C56B009F7E22 /* Models */,
+				2793D1571C45C55F009F7E22 /* Controllers */,
+				2756965E1C446BB600023072 /* AppDelegate.h */,
+				2756965F1C446BB600023072 /* AppDelegate.m */,
+				275696671C446BB600023072 /* Assets.xcassets */,
+				275696691C446BB600023072 /* LaunchScreen.storyboard */,
+				2756966C1C446BB600023072 /* Info.plist */,
+				2756965B1C446BB600023072 /* Supporting Files */,
+			);
+			path = "meal-tracking";
+			sourceTree = "<group>";
+		};
+		2756965B1C446BB600023072 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2756965C1C446BB600023072 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2793D1571C45C55F009F7E22 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				275696611C446BB600023072 /* DiaryViewController.h */,
+				275696621C446BB600023072 /* DiaryViewController.m */,
+				270DAE111C44712A00BD8CD8 /* DayRecordViewController.h */,
+				270DAE121C44712A00BD8CD8 /* DayRecordViewController.m */,
+				270DAE141C4477C500BD8CD8 /* MealInventoryTableViewController.h */,
+				270DAE151C4477C500BD8CD8 /* MealInventoryTableViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		2793D1581C45C56B009F7E22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2793D1511C45BDDF009F7E22 /* MealDatabase.h */,
+				2793D1521C45BDDF009F7E22 /* MealDatabase.m */,
+				2793D1541C45BEAF009F7E22 /* UserMealRecordDatabase.h */,
+				2793D1551C45BEAF009F7E22 /* UserMealRecordDatabase.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		2793D1591C45C582009F7E22 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				275696641C446BB600023072 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		275696571C446BB600023072 /* meal-tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2756966F1C446BB600023072 /* Build configuration list for PBXNativeTarget "meal-tracking" */;
+			buildPhases = (
+				275696541C446BB600023072 /* Sources */,
+				275696551C446BB600023072 /* Frameworks */,
+				275696561C446BB600023072 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "meal-tracking";
+			productName = "meal-tracking";
+			productReference = 275696581C446BB600023072 /* meal-tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		275696501C446BB600023072 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Hy-tsoung Chang";
+				TargetAttributes = {
+					275696571C446BB600023072 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 275696531C446BB600023072 /* Build configuration list for PBXProject "meal-tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2756964F1C446BB600023072;
+			productRefGroup = 275696591C446BB600023072 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				275696571C446BB600023072 /* meal-tracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		275696561C446BB600023072 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2756966B1C446BB600023072 /* LaunchScreen.storyboard in Resources */,
+				275696681C446BB600023072 /* Assets.xcassets in Resources */,
+				275696661C446BB600023072 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		275696541C446BB600023072 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				270DAE131C44712A00BD8CD8 /* DayRecordViewController.m in Sources */,
+				2793D1561C45BEAF009F7E22 /* UserMealRecordDatabase.m in Sources */,
+				275696631C446BB600023072 /* DiaryViewController.m in Sources */,
+				275696601C446BB600023072 /* AppDelegate.m in Sources */,
+				270DAE161C4477C500BD8CD8 /* MealInventoryTableViewController.m in Sources */,
+				2756965D1C446BB600023072 /* main.m in Sources */,
+				2793D1531C45BDDF009F7E22 /* MealDatabase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		275696641C446BB600023072 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				275696651C446BB600023072 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		275696691C446BB600023072 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2756966A1C446BB600023072 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2756966D1C446BB600023072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2756966E1C446BB600023072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		275696701C446BB600023072 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "meal-tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hytsoung.meal-tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		275696711C446BB600023072 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "meal-tracking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.hytsoung.meal-tracking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		275696531C446BB600023072 /* Build configuration list for PBXProject "meal-tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2756966D1C446BB600023072 /* Debug */,
+				2756966E1C446BB600023072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2756966F1C446BB600023072 /* Build configuration list for PBXNativeTarget "meal-tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				275696701C446BB600023072 /* Debug */,
+				275696711C446BB600023072 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 275696501C446BB600023072 /* Project object */;
+}
