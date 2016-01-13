@@ -9,14 +9,14 @@ Goals are :
 - introduce some key concepts and design patterns on the iOS SDK, 
 - start coding and pluging elements together to build an app. 
 
-### Exercices
-Exercices are of progressive difficulty. 
+### Exercises
+Exercises are of progressive difficulty. 
 
-1 Exercice 01 : Check prerequisites, start a simple empty app, exploire the Xcode IDE and Simulator. 
-2 Exercice 02 : Add a button, hook a alert popup, introduction to MVC pattern.
-3 Exercice 03 : Improve UI easily using NSConstraints
-4 Exercice 04 : Continue on MVC pattern, understand the view hierarchy, implement a delegate pattern to push a view and close it back.
-5 Exercice 05 : (if time) Create a meal tracking app. Use important iOS component such as UINavigationController and UITableViewController.
+- Exercise 01 : Check prerequisites, start a simple empty app, exploire the Xcode IDE and Simulator. 
+- Exercise 02 : Add a button, hook a alert popup, introduction to MVC pattern.
+- Exercise 03 : Improve UI easily using NSConstraints
+- Exercise 04 : Continue on MVC pattern, understand the view hierarchy, implement a delegate pattern to push a view and close it back.
+- Exercise 05 : (if time) Create a meal tracking app. Use important iOS component such as UINavigationController and UITableViewController.
 
 ### Architecture of the folders 
 ```
@@ -64,6 +64,6 @@ Exercices are of progressive difficulty.
 
 
 ### Slides
-Under ./prez_web_au_mobile, there's a few slides on what are the differences between web development and native mobile development.
+Under ./prez_web_au_mobile, there are some presentation slides on "differences between web development and native mobile development".
 
 
