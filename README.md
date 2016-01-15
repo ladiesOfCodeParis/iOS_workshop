@@ -9,6 +9,14 @@ Goals are :
 - introduce some key concepts and design patterns on the iOS SDK, 
 - start coding and pluging elements together to build an app. 
 
+### Pre-requisites
+- Mac OS X 10.11 El Capitan
+- XCode 7.2 with iOS 9.2 Documentation
+- Github repo content [LadiesWhoCodeParis iOS Workshop](https://github.com/ladiesWhoCodeParis/iOS_workshop)
+
+### Slides
+Under ./prez_web_au_mobile, there are some presentation slides on "differences between web development and native mobile development".
+
 ### Exercises
 Exercises are of progressive difficulty. 
 
@@ -16,7 +24,7 @@ Exercises are of progressive difficulty.
 - Exercise 02 : Add a button, hook a alert popup, introduction to MVC pattern.
 - Exercise 03 : Improve UI easily using NSConstraints
 - Exercise 04 : Continue on MVC pattern, understand the view hierarchy, implement a delegate pattern to push a view and close it back.
-- Exercise 05 : (if time) Create a meal tracking app. Use important iOS component such as UINavigationController and UITableViewController.
+- Exercise 05 : (if time) Create a meal tracking app. Use important iOS components such as UINavigationController and UITableViewController.
 
 ### Architecture of the folders 
 ```
@@ -57,13 +65,4 @@ Exercises are of progressive difficulty.
 │       └─ /solution/               # xcode projet of the end result
 │
 ```
-
-### Pre-requisites
-- Mac OS X 10.11 El Capitan
-- XCode 7.2 with iOS 9.2 Documentation
-
-
-### Slides
-Under ./prez_web_au_mobile, there are some presentation slides on "differences between web development and native mobile development".
-
 

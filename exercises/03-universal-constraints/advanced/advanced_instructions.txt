@@ -1,0 +1,9 @@
+ADVANCED for those who finished early:
+
+Add other buttons and play with auto-layout constraints so that you have a 3x3 pad of 9 buttons in total.
+
+HINTS:
+- use auto-layout for that.
+- try to find best combination for both iPad and iPhone at the same time.
+- try to find one best combination for iPad and another best combination for iPhone : ask about « size-classes » for that. 
+

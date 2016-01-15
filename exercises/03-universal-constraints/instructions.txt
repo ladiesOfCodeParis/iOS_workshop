@@ -3,17 +3,25 @@ GOALS:
 - Prepare for multiple screen sizes by using UI constraints.
 
 START :
-Open the Xcode project file under ./constraints-exercice/constraints-exercice.xcodeproj
+You can re-use the app created in exercice 02.
+Or open the Xcode project file under .iOS_workshop/exercices/03-universal-constraints/constraints-exercice/constraints-exercice.xcodeproj
 
 INSTRUCTIONS:
+1- Observe how a button lays out in different screens.
 Open Main.storyboard
 Tap on the button in the hierarchy of the scene.
 Change button background color to blue.
 Change button font color to white.
+Increase width and height of the button. 
+Run the app in several devices : iPhone 6, iPad, etc.
+Observe that the button is placed in absolute position, not correctly in all screen sizes and screen orientation (portrait / landscape).
+
+2- Improve button layout with auto-layout constraints.
+There’s a video setup-constraints.m4v to see how it’s done.
+Go back to Xcode and open Main.storyboard.
 Maintain Ctrl button pressed down
 Drap from the Button item to the above View.
 Release and select « Center horizontally in Container »
-(repeat)
 Tap on the button in the hierarchy of the scene.
 Maintain Ctrl button pressed down
 Drap from the Button item to the above View.
@@ -23,7 +31,6 @@ Tap on the button in the hierarchy of the scene.
 Maintain Ctrl button pressed down
 Drap from the Button item to itself.
 Release and select « Width »
-(repeat)
 Tap on the button in the hierarchy of the scene.
 Maintain Ctrl button pressed down
 Drap from the Button item to itself.
@@ -33,6 +40,17 @@ On the right panel, edit height constraint and set constant to 100.
 Run the app.
 Test several device types and rotations : check that the button is always correctly centered.
 
+3- (FUN) Add a cat image on your button
+Open Assets.xcassets. It should be empty first.
+Click on the (+) at the bottom of the Assets left list, then click Import…
+Alternatively you can go to Xcode > Editor > Add Assets > Import…
+Navigate to ./iOS_workshop/exercices/03-universal-constraints/constraints-exercice/ressources/
+Choose an cat image to add.
+Go back top Main.storyboard
+Select the button. 
+On the right property panel, change the Background default image, to choose the cat you’ve just added.
+
+
 SOLUTION:
 You should find the Xcode project under the ./solution folder.
 If run, the app should display a button centered in all configurations. 
@@ -41,3 +59,4 @@ If run, the app should display a button centered in all configurations.
 THINGS TO LOOK UP OR ASK :
 Explore the right panel when looking at the button. 
 Can we edit more details of the constraints ?
+Try to add other buttons and add constraints to each others.
