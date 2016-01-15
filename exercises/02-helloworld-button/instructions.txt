@@ -5,12 +5,13 @@ GOALS:
 - Get a understanding of the MVC pattern
 
 START :
-Open the Xcode project file under ./helloworld-exercice/helloworld-exercice.xcodeproj
+You can start from the app created in exercise 01.
+Or, you can open the Xcode project file under .iOS_workshop/exercices/02-helloworld-button/helloworld-exercice/helloworld-exercice.xcodeproj
 
 INSTRUCTIONS:
 Open the Main.storyboard file
 Place yourself on the ‘View’ element under the ViewController display
-Drag-&-drop a button from the right pane to this View.
+Drag-&-drop a button to this View (see screenshot add-button.png).
 Open ViewController.m
 Add a small code snippet (*) just before the @end marker.
 Open the Main.storyboard file again.
@@ -19,9 +20,9 @@ On the popuped-up menu, hover on « Received Action > showAlert > o »
 a (+) sign should appear on the right end row.
 Drag this (+) from the menu to the button area.
 On release of the click, select « touch up inside »
+(see video connect-IBOutlet-IBAction.m4v)
 Run the app. 
 Test your new button.
-When done, stop the debug. 
 
 SOLUTION:
 You should find the Xcode project under the ./solution folder.
