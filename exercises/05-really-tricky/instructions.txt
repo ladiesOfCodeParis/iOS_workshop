@@ -107,3 +107,4 @@ You should find the Xcode project under the ./solution folder.
 
 THINGS TO LOOK UP OR ASK :
 - Don’t hesitate to ask questions… ! 
+- If you are looking for icons, you can go to http://www.flaticon.com/
