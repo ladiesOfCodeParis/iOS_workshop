@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "270B85D71C3C54CA00C7FD9A"
+               BlueprintIdentifier = "271DD0191C4994F1006C74BE"
                BuildableName = "empty-single-view-objc.app"
                BlueprintName = "empty-single-view-objc"
                ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
@@ -28,31 +28,11 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "270B85EB1C3C54CA00C7FD9A"
-               BuildableName = "empty-single-view-objcTests.xctest"
-               BlueprintName = "empty-single-view-objcTests"
-               ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "270B85F61C3C54CA00C7FD9A"
-               BuildableName = "empty-single-view-objcUITests.xctest"
-               BlueprintName = "empty-single-view-objcUITests"
-               ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "270B85D71C3C54CA00C7FD9A"
+            BlueprintIdentifier = "271DD0191C4994F1006C74BE"
             BuildableName = "empty-single-view-objc.app"
             BlueprintName = "empty-single-view-objc"
             ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
@@ -75,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "270B85D71C3C54CA00C7FD9A"
+            BlueprintIdentifier = "271DD0191C4994F1006C74BE"
             BuildableName = "empty-single-view-objc.app"
             BlueprintName = "empty-single-view-objc"
             ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
@@ -94,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "270B85D71C3C54CA00C7FD9A"
+            BlueprintIdentifier = "271DD0191C4994F1006C74BE"
             BuildableName = "empty-single-view-objc.app"
             BlueprintName = "empty-single-view-objc"
             ReferencedContainer = "container:empty-single-view-objc.xcodeproj">
