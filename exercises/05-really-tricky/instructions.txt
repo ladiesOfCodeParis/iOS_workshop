@@ -1,35 +1,110 @@
 GOALS: 
 - Create a meal tracking app
+- You should use : UITableViewController, UINavigationController, the delegate pattern, NSUserDefaults, the singleton pattern, NSDate, XCodeInterfaceBuilder.
+- You are required to look up structures and documentation by yourself too. 
+
+APPLICATION DESCRIPTION:
 - The purpose of the app is to let you add a list of things you’ve eaten day by day. 
 - The app should have a database of meals references.
-- On main screen, you should have a list of dates.=
+- On main screen, you should have a list of dates.
 - If you tap on one date, you can see a list of meals, empty or not.
-- If you tap on ‘edit’ you can delete an item or add an item at the bottom.
-- Once done, you can tap on ‘Done’
+- If you tap on ‘edit’ you can delete an item or add an item at the bottom or edit the item to change it.
+- Once done, you can tap on ‘Done’ or not.
 - A back button should bring you back to the main screen.
+- The back button saves any changes you made on the meal list on that day.
 
 START :
-Open the Xcode project file under ./really-tricky-exercice/really-tricky-exercice.xcodeproj
+Under .iOS_workshop/exercices/05-really-tricky/really-tricky-exercice/really-tricky-exercice.xcodeproj
 
 INSTRUCTIONS / Hints :
-- Create a meal tracking app
-- On main screen, you should have a list of dates
-Use UITableView for dates
-Enclose it in a NavigationViewController
-- If you tap on one date, you can see a list of meals, empty or not.
-NavigationViewController should push a custom view controller for editing.
-Use UITableView for meals
-- If you tap on ‘edit’ you can delete an item or add an item at the bottom.
-Enter edit mode on UITableView
-- Once done, you can tap on ‘Done’
-Save data somewhere.
-- A back button should bring you back to the main screen.
-NavigationViewController navigation
+0- Create a meal tracking app
+- Start with a simple « Single View application » template
+
+1- Create first screen :
+- On the Main storyboard, drag and drop a UITableView item on the view of the ViewController scene
+- Connect the tableview’s delegate and dataSource IBOutlets to the ViewController item.
+- Rename the ViewController class into DiaryViewController
+- On the DiaryViewController.m class, complete the implementation so that :
+	_ the tableview display 100 row
+	_ the cell display a date in yyyy-MM-dd format
+You need to consult the documentation on UITableViewDelegate and UITableViewDataSource protocols.
+You need to consult NSDate, NSDateFormatter.
+You can have a look at .iOS_workshop/exercices/05-really-tricky/snippets.txt
+- Test it.
+- Congratulations, you just implemented your first tableview !
+
+2- Create second screen :
+- On the Main storyboard, select the DiaryViewController and embed it into a NavigationViewController : Xcode > Editor > Embed in … > Navigation Controller
+- On the Main storyboard, drag and drop a new UITableViewController scene. Rename it into DayRecordViewController.
+- On the Main storyboard, select this DayRecordViewController, and on the right panel, set its Storyboard ID to ‘dayRecordID’
+- On the DiaryViewController.m class, complete the implementation so that if user selects a row, we instantiate a new DayRecordViewController item and then we push it into the current navigationViewController
+You can have a look at .iOS_workshop/exercices/05-really-tricky/snippets.txt
+- Add a class DayRecordViewController to the project. (File > New > File… > Cocoa Touch > etc.). Make sure that the new class is inherited from UITableViewController. Place it in your projet folder.
+- Test it.
+- Congratulations, you just implemented your first navigation controller !
+
+Note: Exercise 05 ends here. Next steps are for those who want to dig further on the iOS SDK. 
+=====
+
+
+
+
+
+
+
+
+
+3- Setup edit mode in second screen
+- In the DayRecordViewController, add a private property dayRecordArray array. Initialize it with 5 dummy values at first.
+- On the DayRecordViewController, modify the implementation so that :
+	_ the tableview displays 5 dummy rows + a dummy row for adding.
+	_ the navigationitem’s right bar is set to the current editButtonItem
+	_ setup the edit mode (with delete and add) vs the normal mode. 
+You need to consult documentation on:
+-(void)setEditing:(BOOL)editing animated:(BOOL)animated {
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle 
+You can have a look at .iOS_workshop/exercices/05-really-tricky/snippets.txt
+- Test it.
+
+4- Create 3rd screen :
+- Create a new class programmatically. File > New > File… > Cocoa Touch Class.
+Make the class inherit from UITableViewController class. Name it MealInventoryTableViewController.
+- On the DayRecordViewController, complete the implementation so that :
+	_ if user selects a row, another new MealInventoryViewController is created and pushed to the current navigationViewController.
+- On the MealInventoryViewController, complete implementation so that :
+	_ the tableview displays 6 fixed rows (Bread, Rice, Vegetable, French Fries, Pasta)
+	_ when user selects an item, we pop back on the navigationViewController
+You need to consult :
+[self.navigationController popViewControllerAnimated:YES];
+
+5- Create good data ressources and separation
+- Create a MealDatabase class, inherited from NSObject. It should implement the singleton paradigm, and return a static array of meals (mealList) for the MealInventoryViewController to use. 
+- Create a UserMealRecordDatabase class, inherited from NSObject. It should have two static public methods :
++ (NSMutableArray*)loadUserMealDataForDay:(NSString*)dayString;
++ (void)saveUserData:(NSArray*)dayRecordData forDay:(NSString*)dayString;
+For this exercice, we will use this : [NSUserDefaults standardUserDefaults]   for storing persistent data. You need to consult [NSUserDefaults standardUserDefaults] documentation to see how to save and retrieve data.
+
+6- Do some glue on data load, display and save.
+- In DiaryViewController, add a private property ‘today’ initialized with current date after viewDidLoad.
+- In MealInventoryTableViewController, use the mealList provided by the MealDatabase singleton.
+- In DayRecordViewController, add a public property « dayString ».
+- In DiaryViewController, before pushing DayRecordViewController, pass the day info. 
+- In DayRecordViewController, load the array of meal recorded for the day, use it for display
+- In MealInventoryTableViewController header, declare a protocol delegate (MealInventoryDelegate) that will pass the selected meal to its parent view controller. 
+- Use the MealInventoryDelegate so that : 
+	_ DayRecordViewController implements it. 
+	_ MealInventoryTableViewController has a property delegate of this type.
+	_ before MealInventoryTableViewController is pushed, set its delegate to DayRecordViewController
+	_ when a user selects a meal row, use the delegate to pass the selected meal back.
+	_ In DiaryViewController’s delegate method implementation, update the days’ record on the correct row. 
+- In DayRecordViewController, when the view is about to disappear, save the new record array for the day. 
+
 
 SOLUTION:
 You should find the Xcode project under the ./solution folder.
-If run, the app should display a button centered in all configurations. 
 
 
 THINGS TO LOOK UP OR ASK :
 - Don’t hesitate to ask questions… ! 
+- If you are looking for icons, you can go to http://www.flaticon.com/

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54339D48CA31C628987BB40297138645564C90FD+++8B262C3",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++FA7930C" : 0,
+    "54339D48CA31C628987BB40297138645564C90FD+++8B262C3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "FA426C88-9757-4683-975E-F4704DDB393F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++FA7930C" : "",
+    "54339D48CA31C628987BB40297138645564C90FD+++8B262C3" : "iOS_workshop\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "meal-tracking-swift",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "exercises\/05-really-tricky\/solution\/meal-tracking-swift\/meal-tracking-swift.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++8B262C3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ladiesWhoCodeParis\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++FA7930C"
+    }
+  ]
+}

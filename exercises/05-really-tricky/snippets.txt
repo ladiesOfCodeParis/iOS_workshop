@@ -1,0 +1,95 @@
+1- Get a formatted string yyyy-MM-dd from a date
+
+    NSDateFormatter* formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy-MM-dd"];
+    NSDate* date = [NSDate dateWithTimeInterval:(60 * 60 * 24)*(indexPath.row - kPreTodayDayCount) sinceDate:myDate];
+    NSString* text = [NSString stringWithFormat:@"%@", [formatter stringFromDate:date]];
+
+
+
+
+2- Push a new DayRecordViewController in the navigation controller
+    DayRecordViewController* dayRecord = (DayRecordViewController*)[[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"dayRecordID"];
+    [self.navigationController pushViewController:dayRecord animated:YES];
+
+
+
+
+3- Setup Edit Mode on UITableViewController
+
+// add the tableview’s « edit » button on the navigation bar
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // setup edit button
+    self.navigationItem.rightBarButtonItem = [self editButtonItem];
+}
+
+// remove/insert the ‘add’ row if going from/to the edit mode
+-(void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:animated];
+    if(editing) {
+        [self.tableView beginUpdates];
+        [self.tableView insertRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:self.dayRecordArray.count inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
+        [self.tableView endUpdates];
+    } else {
+        [self.tableView beginUpdates];
+        [self.tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:[NSIndexPath indexPathForRow:self.dayRecordArray.count inSection:0]] withRowAnimation:UITableViewRowAnimationLeft];
+        [self.tableView endUpdates];
+        
+    }
+}
+
+// setup cell style, if on edit mode
+- (UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.row == self.dayRecordArray.count) {
+        return UITableViewCellEditingStyleInsert;
+    } else {
+        return UITableViewCellEditingStyleDelete;
+    }
+}
+
+// wire actions if user taps on a edit part of a row in edit mode
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        // Delete the row from the data source
+        [self.dayRecordArray removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        // Create a new instance, insert it into the array, and add a new row to the table view
+        [self.dayRecordArray insertObject:@"[new]" atIndex:indexPath.row];
+        [tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
+5- Singleton
+
+ // using GCD
+ + (id)sharedDatabase {
+ static UserMealRecordDatabase *sharedDatabase = nil;
+ static dispatch_once_t onceToken;
+ dispatch_once(&onceToken, ^{
+ sharedDatabase = [[self alloc] init];
+ });
+ return sharedDatabase;
+ }
+
+ // not using GCD
++ (id)sharedDatabase {
+    static MealDatabase *sharedDatabase = nil;
+    @synchronized(self) {
+        if (sharedDatabase == nil)
+            sharedDatabase = [[self alloc] init];
+    }
+    return sharedDatabase;
+}
+
+6- Good data ressources implementation
+You can have a look to those two files :
+./iOS_workshop/exercises/05-really-tricky/solution/meal-tracking/meal-tracking/MealDatabase.m
+./iOS_workshop/exercises/05-really-tricky/solution/meal-tracking/meal-tracking/MealInventoryTableViewController.m
+
+
+

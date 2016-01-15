@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "54339D48CA31C628987BB40297138645564C90FD+++41DC8DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++41DC8DB" : 0,
+    "54339D48CA31C628987BB40297138645564C90FD+++5B53429" : 0,
+    "54339D48CA31C628987BB40297138645564C90FD+++ADD81A3" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "3AD003FA-5008-4B0D-AFD4-8EEF05889246",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "54339D48CA31C628987BB40297138645564C90FD+++41DC8DB" : "iOS_workshop\/",
+    "54339D48CA31C628987BB40297138645564C90FD+++5B53429" : "",
+    "54339D48CA31C628987BB40297138645564C90FD+++ADD81A3" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "meal-tracking",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "exercises\/05-really-tricky\/really-trick-exercice\/meal-tracking\/meal-tracking.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++41DC8DB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/ladiesWhoCodeParis\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++5B53429"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/chancode\/iOS_workshop.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "54339D48CA31C628987BB40297138645564C90FD+++ADD81A3"
+    }
+  ]
+}

@@ -7,8 +7,9 @@ START :
 Open the Xcode project file under ./design-pattern-exercice/design-pattern-exercice.xcodeproj
 
 INSTRUCTIONS:
-1- MainViewController : on the buttonTapped event, display the NameViewController
-Use the code snippet to present the NameViewController modally.
+1- MainViewController : on the buttonTapped event, display the NameViewController :
+	_ Set a storyboard ID ‘nameVC’ to this NameViewController on the storyboard.
+	_ Use the code snippet to present the NameViewController modally, on the buttonTapped event.
 
 2- NameViewControllerDelegate : create a delegate protocol
 Define a delegate protocol : use the code snippet and place it on the header of the objective-c file NameViewController. The protocol should declare two functions cancel and ok. 

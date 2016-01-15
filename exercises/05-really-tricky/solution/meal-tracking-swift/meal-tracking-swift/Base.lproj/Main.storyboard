@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="cJ2-E1-Nck">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Diary View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="DiaryViewController" customModule="meal_tracking_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bG3-Bd-0Lv">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eF1-2p-Xg5"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="Vjy-tK-lOx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bG3-Bd-0Lv" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="1Oc-LL-HAA"/>
+                            <constraint firstItem="bG3-Bd-0Lv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hlI-gT-qfu"/>
+                            <constraint firstAttribute="trailing" secondItem="bG3-Bd-0Lv" secondAttribute="trailing" id="mky-hC-PKI"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="bG3-Bd-0Lv" secondAttribute="bottom" id="oyS-05-xHe"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="7Bv-km-tUL"/>
+                    <connections>
+                        <outlet property="tableView" destination="bG3-Bd-0Lv" id="Vlj-Mi-F6d"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1057" y="337"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="X3A-uW-0Na">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="cJ2-E1-Nck" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VgC-F7-9Nk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="K4X-K0-n3t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zHg-WS-FZu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="200" y="337"/>
+        </scene>
+        <!--Day Record View Controller-->
+        <scene sceneID="Xaf-Kc-MoJ">
+            <objects>
+                <tableViewController storyboardIdentifier="dayRecordID" id="12l-Qo-OZY" customClass="DayRecordViewController" customModule="meal_tracking_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="4dB-r5-7uP">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="12l-Qo-OZY" id="NGU-Kh-2W2"/>
+                            <outlet property="delegate" destination="12l-Qo-OZY" id="cUR-56-38E"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJN-Wn-Izh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768" y="337"/>
+        </scene>
+    </scenes>
+</document>
