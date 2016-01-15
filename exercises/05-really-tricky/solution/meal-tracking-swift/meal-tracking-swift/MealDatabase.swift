@@ -25,7 +25,7 @@ class MealDatabase: NSObject {
     
     override init()  {
         super.init()
-        self.mealArray = ["Bread", "Rice", "Pasta", "Vegetables", "French Fries"]
+        self.mealArray = ["Bread", "Chicken", "Coffee", "Vegetables", "Hamburger", "Drinks"]
     }
     
     func getMeals() -> [String] {

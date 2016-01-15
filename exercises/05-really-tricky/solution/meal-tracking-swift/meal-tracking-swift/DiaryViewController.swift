@@ -44,6 +44,9 @@ class DiaryViewController: UIViewController, UITableViewDelegate, UITableViewDat
         let stringDate = formatter.stringFromDate(date)
         
         cell.textLabel?.text = stringDate
+        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
+        cell.imageView?.image = UIImage(named: "notes24")
+        
         return cell
     }
 

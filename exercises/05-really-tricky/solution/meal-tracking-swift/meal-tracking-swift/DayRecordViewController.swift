@@ -47,6 +47,30 @@ class DayRecordViewController: UITableViewController, MealInventoryDelegate {
             cell.textLabel?.text = "[add]"
         } else {
             cell.textLabel?.text = self.dayRecordArray[indexPath.row]
+            
+            let meal = self.dayRecordArray[indexPath.row]
+            switch (meal) {
+            case "Bread":
+                cell.imageView?.image = UIImage(named: "bakery10")
+                break
+            case "Chicken":
+                cell.imageView?.image = UIImage(named: "chicken3")
+                break
+            case "Vegetables":
+                cell.imageView?.image = UIImage(named: "carrot8")
+                break
+            case "Coffee":
+                cell.imageView?.image = UIImage(named: "cup54")
+                break
+            case "Hamburger":
+                cell.imageView?.image = UIImage(named: "hamburger11")
+                break
+            case "Drinks":
+                cell.imageView?.image = UIImage(named: "drink71")
+                break
+            default:
+                break
+            }
         }
 
         return cell
