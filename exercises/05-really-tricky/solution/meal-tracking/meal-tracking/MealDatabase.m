@@ -10,7 +10,7 @@
 
 @interface MealDatabase ()
 
-@property (nonatomic, strong) NSArray* mealList;
+@property (nonatomic, strong) NSArray* mealArray;
 
 @end
 
@@ -39,7 +39,7 @@
 
 - (id)init {
     if (self = [super init]) {
-        _mealList = @[@"Vegetables",
+        _mealArray = @[@"Vegetables",
                       @"Bread",
                       @"Pasta",
                       @"French Fries",
@@ -49,8 +49,8 @@
 }
 
 
--(NSArray*)mealList {
-    return _mealList;
+-(NSArray*)mealArray {
+    return _mealArray;
 }
 
 @end

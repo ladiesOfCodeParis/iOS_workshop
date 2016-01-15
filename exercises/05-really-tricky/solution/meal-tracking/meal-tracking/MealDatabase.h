@@ -11,6 +11,6 @@
 @interface MealDatabase : NSObject
 
 + (id)sharedDatabase;
-- (NSArray*)mealList;
+- (NSArray*)mealArray;
 
 @end

@@ -13,7 +13,7 @@ static NSString* mealCellID = @"mealCell";
 
 @interface MealInventoryTableViewController ()
 
-@property NSArray* mealData; // tmp
+@property NSArray* mealArray;
 
 @end
 
@@ -26,7 +26,7 @@ static NSString* mealCellID = @"mealCell";
     self.title = @"Meals ?";
     
     // data
-    self.mealData = [[MealDatabase sharedDatabase] mealList];
+    self.mealArray = [[MealDatabase sharedDatabase] mealArray];
     
     // tableview setup
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:mealCellID];
@@ -44,7 +44,7 @@ static NSString* mealCellID = @"mealCell";
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.mealData.count;
+    return self.mealArray.count;
 }
 
 
@@ -56,7 +56,7 @@ static NSString* mealCellID = @"mealCell";
     }
     
     // Configure the cell
-    cell.textLabel.text = [self.mealData objectAtIndex:indexPath.row];
+    cell.textLabel.text = [self.mealArray objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -64,11 +64,11 @@ static NSString* mealCellID = @"mealCell";
 - (void)sendData {
     NSString* selectedData = nil;
     NSIndexPath* selectedPath = [self.tableView indexPathForSelectedRow];
-    if (selectedPath && selectedPath.row < self.mealData.count) {
-        selectedData = [self.mealData objectAtIndex:selectedPath.row];
+    if (selectedPath && selectedPath.row < self.mealArray.count) {
+        selectedData = [self.mealArray objectAtIndex:selectedPath.row];
     }
     if (selectedData) {
-        [self.delegate userDidSelect:selectedData from:self];
+        [self.delegate userDidSelectMeal:selectedData from:self];
     }
 }
 

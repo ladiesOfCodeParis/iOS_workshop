@@ -10,7 +10,7 @@
 
 @protocol MealInventoryDelegate <NSObject>
 
-- (void)userDidSelect:(NSString*)meal from:(id)sender;
+- (void)userDidSelectMeal:(NSString*)meal from:(id)sender;
 
 @end
 
