@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="width" constant="100" id="guV-4b-eXW"/>
                                     <constraint firstAttribute="height" constant="100" id="zpS-ds-dCD"/>
                                 </constraints>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Button" backgroundImage="cat1">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -43,4 +43,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="cat1" width="225" height="225"/>
+    </resources>
 </document>
